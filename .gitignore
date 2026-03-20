@@ -12,6 +12,7 @@ wheels/
 # GTA
 keys/*.json
 .env
+src/config.py
 
 # Data files
 *.csv

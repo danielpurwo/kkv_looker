@@ -1,0 +1,22 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# GTA
+keys/*.json
+.env
+
+# Data files
+*.csv
+*.xlsx
+*.log
+
+# OS Specific
+.DS_Store

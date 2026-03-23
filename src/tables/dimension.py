@@ -27,7 +27,6 @@ def generate_static_dimensions():
     ])
 
     return {
-        "dim_brand": dim_brand,
         "dim_customer_segmentation": dim_customer_segment,
         "dim_channel": dim_channel,
         "dim_promo_dependency": dim_promo_dependency

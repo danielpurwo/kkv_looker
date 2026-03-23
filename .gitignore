@@ -10,9 +10,9 @@ wheels/
 .venv
 
 # GTA
+src/config.py
 keys/*.json
 .env
-src/config.py
 
 # Data files
 *.csv

@@ -32,15 +32,14 @@ This project uses **uv** for ultra-fast dependency management:
 ```bash
 # Install dependencies and run the pipeline in one command
 uv run python -m src.main
-
+```
 
 ## 🧠 Key Engineering Decisions
+
 1. The "View" vs "Table" Strategy
 I utilized BigQuery SQL Views for the final presentation layer.
-
-Performance: Offloads heavy JOIN operations to BigQuery’s columnar engine instead of the BI tool.
-
-Flexibility: Allows schema updates (like adding gross_profit or day_name logic) without re-running the entire ingestion pipeline.
+* **Performance:** Offloads heavy JOIN operations to BigQuery’s engine.
+* **Flexibility:** Allows schema updates without re-running the ingestion.
 
 2. Structural Noise & Data Integrity
 The Python generator includes logic for Structural Noise, simulating realistic retail volatility (seasonal factors, weekend spikes) to provide more meaningful insights during the BI prototyping phase.
